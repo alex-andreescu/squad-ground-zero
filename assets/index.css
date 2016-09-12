@@ -1,0 +1,87 @@
+.hidden {
+  display: none !important;
+}
+
+/*colors go from light to dark [tan, light green, medium green, forest green, dark green]*/
+:root {
+  --color-1: #ecba82;/*beige*/
+  --color-2: #81c14b;/*ultra light green*/
+  --color-3: #2e933c;/*light green*/
+  --color-4: #297045;/*medium green*/
+  --color-5: #204e4a;/*dark green*/
+}
+
+html {
+  background-color: var(--color-4);
+  font-family: sans-serif;
+}
+
+.title__main {
+  background-color: var(--color-1);
+  width: 100%;
+  padding: 1em 0;
+  margin: 0 0 1em;
+}
+
+.site__center {
+ text-align: center;
+}
+
+.site__right {
+  float: right;
+}
+
+.site__left {
+  float: left;
+}
+
+.site__clear {
+  clear: both;
+}
+
+
+
+
+
+
+
+.cameron {
+ position: absolute;
+ bottom: 10px;
+}
+
+.video-set {
+ background-color: gray;
+ border: 5px solid #e7a6bb;
+ border-radius: 3px;
+ padding: 20px;
+ max-width: 100%;
+ margin-top: 20px;
+}
+
+.videos {
+ display: flex;
+ max-width: 100%;
+ overflow-x: scroll;
+}
+
+.vid {
+ position: relative;
+}
+
+.vid:not(.last-child) {
+ padding-right: 15px;
+}
+
+.placeholder-img {
+ max-height: 315;
+ max-width: 560;
+}
+
+.placeholder-text {
+ position: absolute;
+ color: #fefefe;
+ font-size: 2em;
+ top: 50%;
+ left: 30%;
+}

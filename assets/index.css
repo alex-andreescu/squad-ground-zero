@@ -4,7 +4,7 @@
 
 /*colors go from light to dark [tan, light green, medium green, forest green, dark green]*/
 :root {
-  --color-1: #ecba82;/*beige*/
+  --color-1: #74B3CE;/*beige*/
   --color-2: #81c14b;/*ultra light green*/
   --color-3: #2e933c;/*light green*/
   --color-4: #297045;/*medium green*/
@@ -12,7 +12,7 @@
 }
 
 html {
-  background-color: var(--color-4);
+  background-color: #f3f3f3;
   font-family: sans-serif;
 }
 
@@ -20,22 +20,22 @@ html {
   background-color: var(--color-1);
   width: 100%;
   padding: 1em 0;
-  margin: 0 0 1em;
+  margin: 0;
 }
 
-.site__center {
+.center {
  text-align: center;
 }
 
-.site__right {
+.right {
   float: right;
 }
 
-.site__left {
+.left {
   float: left;
 }
 
-.site__clear {
+.clear {
   clear: both;
 }
 
@@ -66,4 +66,27 @@ html {
   color: #FCFCFC;
   background-color: #8CBA80;
 }
+.dev {
+  background-color: var(--color-1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dev li {
+  cursor: pointer;
+  padding: 1em 0;
+  text-align: center;
+  flex-grow: 1;
+  -webkit-transition: color 0.5s, background-color 0.5s;
+  transition: color 0.5s, background-color 0.5s;
+}
+.dev li:hover {
+  background-color: #313628;
+  color: white;
+}
+
 

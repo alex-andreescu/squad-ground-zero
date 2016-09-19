@@ -1,51 +1,81 @@
 <head>
-    <link rel="stylesheet" href="/assets/index.css">
+  <link rel="stylesheet" href="/assets/index.css">
 </head>
-<h1 class="title__main site__center">Austin, the Friend Hater</h1>
-<ul class="theme-select">
-    <li class="theme-select__title">Theme Select</li>
-    <li class="theme-select__item" data-theme="skyline_beach">Skyline Beach</li>
-    <li class="theme-select__item" data-theme="dark_collapse">Dark Collapse</li>
-    <li class="theme-select__item" data-theme="vaunite">Vaunite</li>
-    <li class="theme-select__item" data-theme="greyscale">Greyscale</li>
-    <li class="theme-select__item" data-theme="ailron">Ailron</li>
-</ul>
+<h1 class="title__main site__center">Squad Ground Zero</h1>
+<nav>
+  <ul class="dev">
+    <li class="js-dev" data-link="alex">Alex</li>
+    <li class="js-dev" data-link="austin">Austin</li>
+    <li class="js-dev" data-link="perry">Perry</li>
+  </ul>
+</nav>
+<!-- <ul class="theme-select">
+  <li class="theme-select__title">Theme Select</li>
+  <li class="theme-select__item" data-theme="skyline_beach">Skyline Beach</li>
+  <li class="theme-select__item" data-theme="dark_collapse">Dark Collapse</li>
+  <li class="theme-select__item" data-theme="vaunite">Vaunite</li>
+  <li class="theme-select__item" data-theme="greyscale">Greyscale</li>
+  <li class="theme-select__item" data-theme="ailron">Ailron</li>
+</ul> -->
 <script>
-    var themes = {
-        skyline_beach: [
-            #247ba0,
-            #70c1b3,
-            #b2dbbf,
-            #f3ffbd,
-            #ff1654
+  var devs = document.querySelectorAll('.js-dev');
+
+  for (let dev of devs) {
+    dev.addEventListener('click', function() {
+      location.href = this.dataset.link;
+    });
+  }
+
+
+  var themes = {
+    skyline_beach: [
+      '#247ba0',
+      '#70c1b3',
+      '#b2dbbf',
+      '#f3ffbd',
+      '#ff1654'
+    ],
+    dark_collapse: [
+      '#dcdcdd',
+      '#c5c3c6',
+      '#46494c',
+      '#4c5c68',
+      '#1985a1'
+    ],
+    vaunite: [
+      '#6c69a1',
+      '#949dae',
+      '#b9c7fc',
+      '#5a837d',
+      '#93cef8'
+    ],
+    greyscale: [
+      '#999698',
+      '#625f5f',
+      '#4c4a4c',
+      '#a09d9f',
+      '#cac8cc'
+    ],
+    ailron: [
+      '#af9164',
+      '#f7f3e3',
+      '#b3b6b7',
+      '#6f1a07',
+      '#2b2118'
+    ]
+        notsurewhattocallthis: [
+          #22333B,
+          #EAE0D5,
+          #C6AC8F,
+          #5E503F,
+          #011502
         ],
-        dark_collapse: [
-            #dcdcdd,
-            #c5c3c6,
-            #46494c,
-            #4c5c68,
-            #1985a1
-        ],
-        vaunite: [
-            #6c69a1,
-            #949dae,
-            #b9c7fc,
-            #5a837d,
-            #93cef8
-        ],
-        greyscale: [
-            #999698,
-            #625f5f,
-            #4c4a4c,
-            #a09d9f,
-            #cac8cc
-        ],
-        ailron: [
-            #af9164,
-            #f7f3e3,
-            #b3b6b7,
-            #6f1a07,
-            #2b2118
+        anothergreyscale: [
+          #212121,
+          #DDD7DB,
+          #F9F9F9,
+          #2D2D2D,
+          #CECECE
         ]
-    };
+  };
 </script>

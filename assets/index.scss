@@ -1,8 +1,12 @@
-// site colors - goes from lightest to darkest
-:root {
-  $color-1: #ecba82;// beige
-  $color-2: #81c14b;// ultra light green
-  $color-3: #2e933c;// light green
-  $color-4: #297045;// medium green
-  $color-5: #204e4a;// dark green
+.people {
+  align-content: space-between;
+  display: flex;
+  flex-grow: 1;
+  list-style: none;
+  padding: 0;
+  
+  li {
+    text-align: center;
+    width: 33%;
+  }
 }
